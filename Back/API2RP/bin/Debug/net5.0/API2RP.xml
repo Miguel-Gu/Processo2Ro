@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API2RP</name>
+    </assembly>
+    <members>
+        <member name="M:API2RP.Controllers.UsuariosController.ListarUsuarios">
+            <summary>
+            Lista todos os usuários
+            </summary>
+            <returns>Uma lista de usuários</returns>
+        </member>
+        <member name="M:API2RP.Controllers.UsuariosController.ListarPorId(System.Byte)">
+            <summary>
+            Lista um usuário através do id dele
+            </summary>
+            <param name="id">id do usuário a ser buscado</param>
+            <returns>Um usuário buscado</returns>
+        </member>
+        <member name="M:API2RP.Controllers.UsuariosController.Cadastrar(API2RP.Domains.Usuario)">
+            <summary>
+            Cadastra um novo usuário
+            </summary>
+            <param name="novoUsuario">Novo usuário a ser cadastrado</param>
+            <returns></returns>
+        </member>
+        <member name="M:API2RP.Controllers.UsuariosController.AlterarTudo(System.Int32,API2RP.Domains.Usuario)">
+            <summary>
+            Altera as informações do usuário
+            </summary>
+            <param name="id">id do usuário a ser alterado</param>
+            <param name="usuarioAtt">usuário com as informacoes atualizadas</param>
+            <returns></returns>
+        </member>
+        <member name="M:API2RP.Controllers.UsuariosController.AlterarPropriasInformacoes(System.Int32,API2RP.Domains.Usuario)">
+            <summary>
+            Altera as informações do usuário
+            </summary>
+            <param name="id">id do usuário a ser alterado</param>
+            <param name="usuarioAtt">usuário com as informacoes atualizadas</param>
+            <returns></returns>
+        </member>
+        <member name="M:API2RP.Controllers.UsuariosController.Excluir(System.Int32)">
+            <summary>
+            Exclui um usuário
+            </summary>
+            <param name="id">id do usuário a ser excluido</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

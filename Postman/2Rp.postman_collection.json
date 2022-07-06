@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "af3b67b9-4071-49ae-860f-9e72170a50f8",
+		"name": "2Rp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ListarUsuarios",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMyIsIm5hbWUiOiJMZXRpY2lhIFNhbnRvcyIsImVtYWlsIjoibGVzYW50b3NAb3V0bG9vay5jb20iLCJTdGF0dXMiOiJhdGl2byIsImV4cCI6MTY1NzA0MTE1MCwiaXNzIjoiQVBJMlJQIiwiYXVkIjoiQVBJMlJQIn0.VJyeSIfM630g3EV6f-ygU-IjQCWEm0qjbbAn-xSCI94",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Usuarios/ListarUsuarios",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Usuarios",
+						"ListarUsuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"lesantos@outlook.com\",\r\n  \"senha\": \"SenhaLeticia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarPorId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Usuarios/ListarPorId/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Usuarios",
+						"ListarPorId",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMyIsIklkVGlwb1VzdWFyaW8iOiIzIiwibmFtZSI6IkxldGljaWEgU2FudG9zIiwiZW1haWwiOiJsZXNhbnRvc0BvdXRsb29rLmNvbSIsIlN0YXR1cyI6ImF0aXZvIiwiZXhwIjoxNjU3MTI4NjI1LCJpc3MiOiJBUEkyUlAiLCJhdWQiOiJBUEkyUlAifQ.GqsNLIJyxQ6lvJR_FJ_jm-RStGGk94QFYR9LOwTXr8Y",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idTipoUsuario\": 3,\r\n  \"nome\": \"Administrador\",\r\n  \"email\": \"administrador@email.com\",\r\n  \"senha\": \"SenhaAdministrador\",\r\n  \"status\": \"ativo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Usuarios/Cadastrar",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Usuarios",
+						"Cadastrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AlterarTudo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMyIsIm5hbWUiOiJMZXRpY2lhIFNhbnRvcyIsImVtYWlsIjoibGVzYW50b3NAb3V0bG9vay5jb20iLCJTdGF0dXMiOiJhdGl2byIsImV4cCI6MTY1NzA0MjA5MSwiaXNzIjoiQVBJMlJQIiwiYXVkIjoiQVBJMlJQIn0.t8MCABs9RWsBpq9i6H2pTk4AV6HyOXP5YF2Q54nZ2i0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idTipoUsuario\": 3,\r\n  \"nome\": \"Gustavo Miguel\",\r\n  \"email\": \"gumiguel390@gmail.com\",\r\n  \"senha\": \"SenhaGustavo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Usuarios/AlterarTudo/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Usuarios",
+						"AlterarTudo",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AlterarPropriasInformacoes",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Gustavo Miguel Da Silva\",\r\n  \"email\": \"gumiguel8@hotmail.com\",\r\n  \"senha\": \"SenhaGustavo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Usuarios/AlterarPropriasInformacoes/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Usuarios",
+						"AlterarPropriasInformacoes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMyIsIm5hbWUiOiJMZXRpY2lhIFNhbnRvcyIsImVtYWlsIjoibGVzYW50b3NAb3V0bG9vay5jb20iLCJTdGF0dXMiOiJhdGl2byIsImV4cCI6MTY1NzA0MzQ5MiwiaXNzIjoiQVBJMlJQIiwiYXVkIjoiQVBJMlJQIn0.0rLf-yNNOvjctSd4fi5Xuc7fHq9Fn6OM6XZbK8pX9U4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Usuarios/Excluir/7",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Usuarios",
+						"Excluir",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
