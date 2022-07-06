@@ -7,3 +7,6 @@ Ao clonar esse repositório, o usuário deverá:
     4. Iniciar o front-end react "front-2rp".
 
 Após a execução desses passos, a aplicação estará disponível para que o usuário a utilize no navegador de sua preferência.
+
+Link demonstrando funcionamento da aplicação:
+https://youtu.be/wPaAMeoGZtU
